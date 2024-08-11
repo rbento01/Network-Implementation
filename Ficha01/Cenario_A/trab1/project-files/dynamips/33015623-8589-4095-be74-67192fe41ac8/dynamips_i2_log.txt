@@ -1,0 +1,32 @@
+Oct 04 15:10:21.055 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Oct 04 15:10:21.056 HYPERVISOR: Started on IP = localhost, TCP port = 60087.
+Oct 04 15:10:21.543 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 04 15:10:21.544 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\bento\GNS3\projects\trab1\project-files\dynamips 
+Oct 04 15:10:21.545 GENERAL: working_dir=C:\Users\bento\GNS3\projects\trab1\project-files\dynamips
+Oct 04 15:10:21.545 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\bento\GNS3\projects\trab1\project-files\dynamips\33015623-8589-4095-be74-67192fe41ac8 
+Oct 04 15:10:21.546 GENERAL: working_dir=C:\Users\bento\GNS3\projects\trab1\project-files\dynamips\33015623-8589-4095-be74-67192fe41ac8
+Oct 04 15:10:21.547 HYPERVISOR: exec_cmd: vm create R2 2 c2691 
+Oct 04 15:10:21.548 VM: VM R2 created.
+Oct 04 15:10:21.549 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5001 
+Oct 04 15:10:21.549 HYPERVISOR: exec_cmd: c2691 get_mac_addr R2 
+Oct 04 15:10:21.550 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/bento/GNS3/images/IOS/c2691-adventerprisek9-mz.124-25d.image 
+Oct 04 15:10:21.550 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 04 15:10:21.550 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x60a48cb8 
+Oct 04 15:10:21.551 HYPERVISOR: exec_cmd: vm set_exec_area R2 64 
+Oct 04 15:10:21.551 HYPERVISOR: exec_cmd: vm set_ram R2 192 
+Oct 04 15:10:21.552 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Oct 04 15:10:21.552 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Oct 04 15:10:21.553 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 04 15:10:21.553 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 NM-1FE-TX 
+Oct 04 15:10:21.625 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/bento/GNS3/images/IOS/c2691-adventerprisek9-mz.124-25d.image 
+Oct 04 15:10:25.202 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Oct 04 15:10:25.203 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\bento\GNS3\projects\trab1\project-files\dynamips\c2691-adventerprisek9-mz.124-25d.image-192.ghost 
+Oct 04 15:10:25.203 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 04 15:10:25.204 HYPERVISOR: exec_cmd: vm set_config R2 configs\i2_startup-config.cfg 
+Oct 04 15:10:25.204 HYPERVISOR: exec_cmd: vm start R2 
+Oct 04 15:17:35.392 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/bento/GNS3/images/IOS/c2691-adventerprisek9-mz.124-25d.image 
+Oct 04 15:17:39.824 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/bento/GNS3/images/IOS/c2691-adventerprisek9-mz.124-25d.image 
+Oct 04 16:25:55.571 HYPERVISOR: Stopped.
+Oct 04 16:25:55.668 VM: VM R2 shutdown.
+Oct 04 16:25:55.668 VM: VM R2 destroyed.
+Oct 04 16:25:55.672 GENERAL: reset done.

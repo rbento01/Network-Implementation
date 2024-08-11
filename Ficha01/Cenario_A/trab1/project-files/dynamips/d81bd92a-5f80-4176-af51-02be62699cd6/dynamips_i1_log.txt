@@ -1,0 +1,52 @@
+Oct 04 15:08:19.812 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Oct 04 15:08:19.812 HYPERVISOR: Started on IP = localhost, TCP port = 49799.
+Oct 04 15:08:19.975 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 04 15:08:19.976 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\bento\GNS3\projects\trab1\project-files\dynamips 
+Oct 04 15:08:19.984 GENERAL: working_dir=C:\Users\bento\GNS3\projects\trab1\project-files\dynamips
+Oct 04 15:08:19.985 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\bento\GNS3\projects\trab1\project-files\dynamips\d81bd92a-5f80-4176-af51-02be62699cd6 
+Oct 04 15:08:19.985 GENERAL: working_dir=C:\Users\bento\GNS3\projects\trab1\project-files\dynamips\d81bd92a-5f80-4176-af51-02be62699cd6
+Oct 04 15:08:19.985 HYPERVISOR: exec_cmd: vm create R1 1 c2691 
+Oct 04 15:08:19.987 VM: VM R1 created.
+Oct 04 15:08:19.987 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+Oct 04 15:08:19.988 HYPERVISOR: exec_cmd: c2691 get_mac_addr R1 
+Oct 04 15:08:19.988 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/bento/GNS3/images/IOS/c2691-adventerprisek9-mz.124-25d.image 
+Oct 04 15:08:19.989 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 04 15:08:19.989 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60a48cb8 
+Oct 04 15:08:19.989 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+Oct 04 15:08:19.990 HYPERVISOR: exec_cmd: vm set_ram R1 192 
+Oct 04 15:08:19.990 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Oct 04 15:08:19.990 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Oct 04 15:08:19.991 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 04 15:08:19.991 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 NM-1FE-TX 
+Oct 04 15:08:20.308 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/bento/GNS3/images/IOS/c2691-adventerprisek9-mz.124-25d.image 
+Oct 04 15:08:37.807 HYPERVISOR: exec_cmd: vm create Ghost 0 c2691 
+Oct 04 15:08:37.808 VM: VM Ghost created.
+Oct 04 15:08:37.809 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/bento/GNS3/images/IOS/c2691-adventerprisek9-mz.124-25d.image 
+Oct 04 15:08:37.809 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Oct 04 15:08:37.809 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\bento\GNS3\projects\trab1\project-files\dynamips\c2691-adventerprisek9-mz.124-25d.image-192.ghost 
+Oct 04 15:08:37.810 HYPERVISOR: exec_cmd: vm set_ram Ghost 192 
+Oct 04 15:08:37.810 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Oct 04 15:08:37.810 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Oct 04 15:08:37.810 HYPERVISOR: exec_cmd: vm start Ghost 
+Oct 04 15:08:38.136 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Oct 04 15:08:38.137 HYPERVISOR: exec_cmd: vm stop Ghost 
+Oct 04 15:08:38.247 VM: VM Ghost shutdown.
+Oct 04 15:08:38.248 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Oct 04 15:08:38.249 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Oct 04 15:08:38.250 VM: VM Ghost destroyed.
+Oct 04 15:08:38.257 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Oct 04 15:08:38.258 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\bento\GNS3\projects\trab1\project-files\dynamips\c2691-adventerprisek9-mz.124-25d.image-192.ghost 
+Oct 04 15:08:38.258 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 04 15:08:38.258 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg 
+Oct 04 15:08:38.258 HYPERVISOR: exec_cmd: vm start R1 
+Oct 04 15:10:25.201 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Oct 04 15:10:25.202 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\bento\GNS3\projects\trab1\project-files\dynamips\c2691-adventerprisek9-mz.124-25d.image-192.ghost 
+Oct 04 15:10:25.202 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 04 15:17:35.394 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/bento/GNS3/images/IOS/c2691-adventerprisek9-mz.124-25d.image 
+Oct 04 15:17:39.827 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/bento/GNS3/images/IOS/c2691-adventerprisek9-mz.124-25d.image 
+Oct 04 15:42:38.707 HYPERVISOR: exec_cmd: vm extract_config R1 
+Oct 04 15:42:38.712 HYPERVISOR: exec_cmd: vm extract_config R1 
+Oct 04 16:25:55.571 HYPERVISOR: Stopped.
+Oct 04 16:25:55.665 VM: VM R1 shutdown.
+Oct 04 16:25:55.665 VM: VM R1 destroyed.
+Oct 04 16:25:55.666 GENERAL: reset done.

@@ -1,0 +1,32 @@
+Jan 10 13:52:40.963 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jan 10 13:52:40.964 HYPERVISOR: Started on IP = localhost, TCP port = 54671.
+Jan 10 13:52:41.469 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 10 13:52:41.469 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\bento\OneDrive - Instituto Politécnico de Tomar\Desktop\IPT\3º Ano-1º Semestre\Redes de Dados II\Ficha04\Lab04\project-files\dynamips 
+Jan 10 13:52:41.469 GENERAL: working_dir=C:\Users\bento\OneDrive - Instituto Politécnico de Tomar\Desktop\IPT\3º Ano-1º Semestre\Redes de Dados II\Ficha04\Lab04\project-files\dynamips
+Jan 10 13:52:41.470 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\bento\OneDrive - Instituto Politécnico de Tomar\Desktop\IPT\3º Ano-1º Semestre\Redes de Dados II\Ficha04\Lab04\project-files\dynamips\6893cc80-0bd7-4ced-abf0-179fbe63bd14 
+Jan 10 13:52:41.470 GENERAL: working_dir=C:\Users\bento\OneDrive - Instituto Politécnico de Tomar\Desktop\IPT\3º Ano-1º Semestre\Redes de Dados II\Ficha04\Lab04\project-files\dynamips\6893cc80-0bd7-4ced-abf0-179fbe63bd14
+Jan 10 13:52:41.470 HYPERVISOR: exec_cmd: vm create AS_200 5 c2691 
+Jan 10 13:52:41.471 VM: VM AS_200 created.
+Jan 10 13:52:41.472 HYPERVISOR: exec_cmd: vm set_con_tcp_port AS_200 5004 
+Jan 10 13:52:41.472 HYPERVISOR: exec_cmd: c2691 get_mac_addr AS_200 
+Jan 10 13:52:41.473 HYPERVISOR: exec_cmd: vm set_disk0 AS_200 0 
+Jan 10 13:52:41.473 HYPERVISOR: exec_cmd: vm set_exec_area AS_200 64 
+Jan 10 13:52:41.474 HYPERVISOR: exec_cmd: vm get_status AS_200 
+Jan 10 13:52:41.474 HYPERVISOR: exec_cmd: vm set_idle_pc AS_200 0x60a48cb8 
+Jan 10 13:52:41.474 HYPERVISOR: exec_cmd: vm set_ios AS_200 C:/Users/bento/GNS3/images/IOS/c2691-adventerprisek9-mz.124-25d.image 
+Jan 10 13:52:41.475 HYPERVISOR: exec_cmd: c2691 set_mac_addr AS_200 c005.3754.0000 
+Jan 10 13:52:41.475 HYPERVISOR: exec_cmd: vm set_nvram AS_200 256 
+Jan 10 13:52:41.475 HYPERVISOR: exec_cmd: vm set_ram AS_200 192 
+Jan 10 13:52:41.476 HYPERVISOR: exec_cmd: vm get_status AS_200 
+Jan 10 13:52:41.476 HYPERVISOR: exec_cmd: vm slot_add_binding AS_200 1 0 NM-1FE-TX 
+Jan 10 13:52:42.726 HYPERVISOR: exec_cmd: nio create_udp udp-1e407c8b-8d83-4452-b90d-7c653c967a5e 2022 127.0.0.1 2023 
+Jan 10 13:52:42.963 HYPERVISOR: exec_cmd: vm slot_add_nio_binding AS_200 0 0 udp-1e407c8b-8d83-4452-b90d-7c653c967a5e 
+Jan 10 13:52:42.963 HYPERVISOR: exec_cmd: vm get_status AS_200 
+Jan 10 13:52:43.002 HYPERVISOR: exec_cmd: nio create_udp udp-bae55a54-2a81-43a8-b6fa-f271ce5c5bc2 2026 127.0.0.1 2027 
+Jan 10 13:52:43.005 HYPERVISOR: exec_cmd: vm slot_add_nio_binding AS_200 0 1 udp-bae55a54-2a81-43a8-b6fa-f271ce5c5bc2 
+Jan 10 13:52:43.005 HYPERVISOR: exec_cmd: vm get_status AS_200 
+Jan 10 13:53:37.686 HYPERVISOR: exec_cmd: vm set_ghost_status AS_200 2 
+Jan 10 13:53:37.687 HYPERVISOR: exec_cmd: vm set_ghost_file AS_200 C:\Users\bento\OneDrive - Instituto Politécnico de Tomar\Desktop\IPT\3º Ano-1º Semestre\Redes de Dados II\Ficha04\Lab04\project-files\dynamips\c2691-adventerprisek9-mz.124-25d.image-192.ghost 
+Jan 10 13:53:37.688 HYPERVISOR: exec_cmd: vm get_status AS_200 
+Jan 10 13:53:37.689 HYPERVISOR: exec_cmd: vm set_config AS_200 configs\i5_startup-config.cfg 
+Jan 10 13:53:37.690 HYPERVISOR: exec_cmd: vm start AS_200 

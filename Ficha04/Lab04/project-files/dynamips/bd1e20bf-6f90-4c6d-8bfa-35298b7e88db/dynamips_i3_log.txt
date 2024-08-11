@@ -1,0 +1,47 @@
+Jan 10 13:52:39.849 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jan 10 13:52:39.850 HYPERVISOR: Started on IP = localhost, TCP port = 54665.
+Jan 10 13:52:40.351 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 10 13:52:40.351 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\bento\OneDrive - Instituto Politécnico de Tomar\Desktop\IPT\3º Ano-1º Semestre\Redes de Dados II\Ficha04\Lab04\project-files\dynamips 
+Jan 10 13:52:40.352 GENERAL: working_dir=C:\Users\bento\OneDrive - Instituto Politécnico de Tomar\Desktop\IPT\3º Ano-1º Semestre\Redes de Dados II\Ficha04\Lab04\project-files\dynamips
+Jan 10 13:52:40.352 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\bento\OneDrive - Instituto Politécnico de Tomar\Desktop\IPT\3º Ano-1º Semestre\Redes de Dados II\Ficha04\Lab04\project-files\dynamips\bd1e20bf-6f90-4c6d-8bfa-35298b7e88db 
+Jan 10 13:52:40.352 GENERAL: working_dir=C:\Users\bento\OneDrive - Instituto Politécnico de Tomar\Desktop\IPT\3º Ano-1º Semestre\Redes de Dados II\Ficha04\Lab04\project-files\dynamips\bd1e20bf-6f90-4c6d-8bfa-35298b7e88db
+Jan 10 13:52:40.352 HYPERVISOR: exec_cmd: vm create R2 3 c2691 
+Jan 10 13:52:40.353 VM: VM R2 created.
+Jan 10 13:52:40.353 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5002 
+Jan 10 13:52:40.354 HYPERVISOR: exec_cmd: c2691 get_mac_addr R2 
+Jan 10 13:52:40.354 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Jan 10 13:52:40.354 HYPERVISOR: exec_cmd: vm set_exec_area R2 64 
+Jan 10 13:52:40.355 HYPERVISOR: exec_cmd: vm get_status R2 
+Jan 10 13:52:40.355 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x60a48cb8 
+Jan 10 13:52:40.355 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/bento/GNS3/images/IOS/c2691-adventerprisek9-mz.124-25d.image 
+Jan 10 13:52:40.356 HYPERVISOR: exec_cmd: c2691 set_mac_addr R2 c003.2a9c.0000 
+Jan 10 13:52:40.356 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Jan 10 13:52:40.356 HYPERVISOR: exec_cmd: vm set_ram R2 192 
+Jan 10 13:52:40.357 HYPERVISOR: exec_cmd: vm get_status R2 
+Jan 10 13:52:40.357 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 NM-1FE-TX 
+Jan 10 13:52:42.140 HYPERVISOR: exec_cmd: nio create_udp udp-0ec054aa-62bd-4e40-8ac4-2dcdf58ca744 2010 127.0.0.1 2011 
+Jan 10 13:52:42.390 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-0ec054aa-62bd-4e40-8ac4-2dcdf58ca744 
+Jan 10 13:52:42.391 HYPERVISOR: exec_cmd: vm get_status R2 
+Jan 10 13:52:43.012 HYPERVISOR: exec_cmd: nio create_udp udp-7331fe2f-288e-4a9b-bd27-feddead3610c 2028 127.0.0.1 2029 
+Jan 10 13:52:43.014 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 1 udp-7331fe2f-288e-4a9b-bd27-feddead3610c 
+Jan 10 13:52:43.015 HYPERVISOR: exec_cmd: vm get_status R2 
+Jan 10 13:53:36.885 HYPERVISOR: exec_cmd: vm create Ghost 0 c2691 
+Jan 10 13:53:36.887 VM: VM Ghost created.
+Jan 10 13:53:36.887 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/bento/GNS3/images/IOS/c2691-adventerprisek9-mz.124-25d.image 
+Jan 10 13:53:36.888 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jan 10 13:53:36.888 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\bento\OneDrive - Instituto Politécnico de Tomar\Desktop\IPT\3º Ano-1º Semestre\Redes de Dados II\Ficha04\Lab04\project-files\dynamips\c2691-adventerprisek9-mz.124-25d.image-192.ghost 
+Jan 10 13:53:36.888 HYPERVISOR: exec_cmd: vm set_ram Ghost 192 
+Jan 10 13:53:36.889 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jan 10 13:53:36.907 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Jan 10 13:53:36.907 HYPERVISOR: exec_cmd: vm start Ghost 
+Jan 10 13:53:37.285 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jan 10 13:53:37.286 HYPERVISOR: exec_cmd: vm stop Ghost 
+Jan 10 13:53:37.357 VM: VM Ghost shutdown.
+Jan 10 13:53:37.358 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Jan 10 13:53:37.359 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jan 10 13:53:37.359 VM: VM Ghost destroyed.
+Jan 10 13:53:37.369 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Jan 10 13:53:37.370 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\bento\OneDrive - Instituto Politécnico de Tomar\Desktop\IPT\3º Ano-1º Semestre\Redes de Dados II\Ficha04\Lab04\project-files\dynamips\c2691-adventerprisek9-mz.124-25d.image-192.ghost 
+Jan 10 13:53:37.370 HYPERVISOR: exec_cmd: vm get_status R2 
+Jan 10 13:53:37.371 HYPERVISOR: exec_cmd: vm set_config R2 configs\i3_startup-config.cfg 
+Jan 10 13:53:37.371 HYPERVISOR: exec_cmd: vm start R2 
